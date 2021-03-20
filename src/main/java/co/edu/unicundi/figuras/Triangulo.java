@@ -11,6 +11,19 @@ package co.edu.unicundi.figuras;
  */
 public class Triangulo extends Figura{
 
+    private float lado1;
+    
+    private float lado2;
+    
+    private float lado3;
+
+    public Triangulo(float lado1, float lado2, float lado3, float area, float perimetro) {
+        super(area, perimetro);
+        this.lado1 = lado1;
+        this.lado2 = lado2;
+        this.lado3 = lado3;
+    }
+    
     @Override
     public void calcularArea() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -19,6 +32,48 @@ public class Triangulo extends Figura{
     @Override
     public void calcularPerimetro() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
+     * @return the lado1
+     */
+    public float getLado1() {
+        return lado1;
+    }
+
+    /**
+     * @param lado1 the lado1 to set
+     */
+    public void setLado1(float lado1) {
+        this.lado1 = lado1;
+    }
+
+    /**
+     * @return the lado2
+     */
+    public float getLado2() {
+        return lado2;
+    }
+
+    /**
+     * @param lado2 the lado2 to set
+     */
+    public void setLado2(float lado2) {
+        this.lado2 = lado2;
+    }
+
+    /**
+     * @return the lado3
+     */
+    public float getLado3() {
+        return lado3;
+    }
+
+    /**
+     * @param lado3 the lado3 to set
+     */
+    public void setLado3(float lado3) {
+        this.lado3 = lado3;
     }
     
 }

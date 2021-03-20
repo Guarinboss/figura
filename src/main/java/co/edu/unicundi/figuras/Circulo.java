@@ -11,14 +11,35 @@ package co.edu.unicundi.figuras;
  */
 public class Circulo extends Figura {
 
+    private float radio;
+
+    public Circulo(float radio, float area, float perimetro) {
+        super(area, perimetro);
+        this.radio = radio;
+    }
+    
     @Override
     public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        super.setArea((float) (Math.PI * Math.pow(radio, 2)));
     }
 
     @Override
     public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        super.setPerimetro((float) (2 * Math.PI * radio));
+    }
+
+    /**
+     * @return the radio
+     */
+    public float getRadio() {
+        return radio;
+    }
+
+    /**
+     * @param radio the radio to set
+     */
+    public void setRadio(float radio) {
+        this.radio = radio;
     }
     
 }

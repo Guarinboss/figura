@@ -10,15 +10,36 @@ package co.edu.unicundi.figuras;
  * @author User
  */
 public class Cuadrado extends Figura {
+    
+    private float lado;
+
+    public Cuadrado(float lado, float area, float perimetro) {
+        super(area, perimetro);
+        this.lado = lado;
+    }
 
     @Override
     public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        super.setArea((float) Math.pow(lado, 2));
     }
 
     @Override
     public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        super.setPerimetro((float) 4 * lado);
+    }
+
+    /**
+     * @return the radio
+     */
+    public float getLado() {
+        return lado;
+    }
+
+    /**
+     * @param lado the radio to set
+     */
+    public void setLado(float lado) {
+        this.lado = lado;
     }
     
 }

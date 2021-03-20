@@ -13,7 +13,12 @@ public abstract class Figura {
 
     private float area; 
     
-    private float perimetro; 
+    private float perimetro;
+
+    public Figura(float area, float perimetro) {
+        this.area = area;
+        this.perimetro = perimetro;
+    }
         
     public abstract void calcularArea(); 
     
@@ -35,8 +40,5 @@ public abstract class Figura {
     public void setPerimetro(float perimetro) {
         this.perimetro = perimetro;
     }
-    
-    
-    
     
 }
