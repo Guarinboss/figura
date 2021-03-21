@@ -23,12 +23,12 @@ public class Rectangulo extends Figura {
     
     @Override
     public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        super.setArea((float)(lado1*lado2));
     }
 
     @Override
     public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        super.setPerimetro((float)(2*(lado1+lado2)));
     }
 
     /**

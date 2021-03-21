@@ -26,12 +26,28 @@ public class Triangulo extends Figura{
     
     @Override
     public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (lado1 == lado2 & lado1 == lado3 & lado2 == lado3){
+            super.setArea((float)((Math.sqrt(3)/4)*Math.pow(lado1, 2)));
+        }
+        else if(lado1 != lado2 & lado1 != lado3 & lado2 != lado3){
+            float semiperimetro = (lado1+lado2+lado3)/2;
+            super.setArea((float)(Math.sqrt(semiperimetro*(semiperimetro-lado1)*(semiperimetro-lado2)*(semiperimetro-lado3))));
+        }else{
+            if(lado1 == lado2){
+                super.setArea((float)((lado3*Math.sqrt(Math.pow(lado1, 2)-(Math.pow(lado3, 2)/4)))/2));
+            }
+            else if(lado1 == lado3){
+                super.setArea((float)((lado2*Math.sqrt(Math.pow(lado1, 2)-(Math.pow(lado2, 2)/4)))/2));
+            }
+            else{
+                super.setArea((float)((lado1*Math.sqrt(Math.pow(lado2, 2)-(Math.pow(lado1, 2)/4)))/2));
+            }
+        }
     }
 
     @Override
     public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        setPerimetro(lado1+lado2+lado3);
     }
 
     /**
