@@ -13,8 +13,7 @@ public class Cuadrado extends Figura {
     
     private float lado;
 
-    public Cuadrado(float lado, float area, float perimetro) {
-        super(area, perimetro);
+    public Cuadrado(float lado) {
         this.lado = lado;
     }
 
@@ -26,6 +25,12 @@ public class Cuadrado extends Figura {
     @Override
     public void calcularPerimetro() {
         super.setPerimetro((float) 4 * lado);
+    }
+    
+    @Override
+    public void imprimirDatos() {
+        System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
+                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
     }
 
     /**

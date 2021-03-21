@@ -17,8 +17,7 @@ public class Triangulo extends Figura{
     
     private float lado3;
 
-    public Triangulo(float lado1, float lado2, float lado3, float area, float perimetro) {
-        super(area, perimetro);
+    public Triangulo(float lado1, float lado2, float lado3) {
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;
@@ -48,6 +47,12 @@ public class Triangulo extends Figura{
     @Override
     public void calcularPerimetro() {
         setPerimetro(lado1+lado2+lado3);
+    }
+    
+    @Override
+    public void imprimirDatos() {
+        System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
+                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
     }
 
     /**

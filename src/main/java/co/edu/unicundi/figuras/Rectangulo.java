@@ -15,8 +15,7 @@ public class Rectangulo extends Figura {
     
     private float lado2;
 
-    public Rectangulo(float lado1, float lado2, float area, float perimetro) {
-        super(area, perimetro);
+    public Rectangulo(float lado1, float lado2) {
         this.lado1 = lado1;
         this.lado2 = lado2;
     }
@@ -29,6 +28,12 @@ public class Rectangulo extends Figura {
     @Override
     public void calcularPerimetro() {
         super.setPerimetro((float)(2*(lado1+lado2)));
+    }
+    
+    @Override
+    public void imprimirDatos() {
+        System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
+                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
     }
 
     /**

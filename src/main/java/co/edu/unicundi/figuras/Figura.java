@@ -9,16 +9,11 @@ package co.edu.unicundi.figuras;
  *
  * @author User
  */
-public abstract class Figura {
+public abstract class Figura implements IFigura {
 
     private float area; 
     
     private float perimetro;
-
-    public Figura(float area, float perimetro) {
-        this.area = area;
-        this.perimetro = perimetro;
-    }
         
     public abstract void calcularArea(); 
     

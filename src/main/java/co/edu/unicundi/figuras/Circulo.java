@@ -13,8 +13,7 @@ public class Circulo extends Figura {
 
     private float radio;
 
-    public Circulo(float radio, float area, float perimetro) {
-        super(area, perimetro);
+    public Circulo(float radio) {
         this.radio = radio;
     }
     
@@ -26,6 +25,12 @@ public class Circulo extends Figura {
     @Override
     public void calcularPerimetro() {
         super.setPerimetro((float) (2 * Math.PI * radio));
+    }
+    
+    @Override
+    public void imprimirDatos() {
+        System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
+                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
     }
 
     /**

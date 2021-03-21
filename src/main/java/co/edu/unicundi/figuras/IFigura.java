@@ -11,5 +11,6 @@ package co.edu.unicundi.figuras;
  */
 public interface IFigura {
     
-    public void imprimirDatos(); 
+    public void imprimirDatos();
+    
 }
