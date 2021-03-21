@@ -6,27 +6,48 @@
 package co.edu.unicundi.figuras;
 
 /**
- *
- * @author User
+ * Clase hija de la clase Figura ecargada de recibir el radio de la figura 
+ * Circulo para calcular el area y perimetro, y a su vez imprimir 
+ * los calculo realizados. 
+ * @author Alejandro Cuaran
+ * @author David Parrado
+ * @version 1.0.0
+ * @since Netbeans IDE 12.2, JDK 1.8.0_281
  */
 public class Circulo extends Figura {
 
+    /**
+     * Variable que indica el radio del circulo
+     */
     private float radio;
 
+    
+    /**
+     * Constructor sobrecargado de la clase Circulo
+     * @param radio recibe como parametro el valor del radio
+     */
     public Circulo(float radio) {
         this.radio = radio;
     }
-    
+    /**
+     * Metodo que calcula el valor del area para un circulo
+     */
     @Override
     public void calcularArea() {
         super.setArea((float) (Math.PI * Math.pow(radio, 2)));
     }
-
+    
+    /**
+     * Metodo que calcula el valor del perimetro para un circulo
+     */
     @Override
     public void calcularPerimetro() {
         super.setPerimetro((float) (2 * Math.PI * radio));
     }
     
+    /**
+     * Metodo que imprime los datos del circulo
+     */
     @Override
     public void imprimirDatos() {
         System.out.println("El area del Circulo es igual a: " + super.getArea() + "\n" + 
@@ -34,14 +55,16 @@ public class Circulo extends Figura {
     }
 
     /**
-     * @return the radio
+     * Metodo que retorna el valor la variable radio
+     * @return retorna el valor del radio
      */
     public float getRadio() {
         return radio;
     }
 
     /**
-     * @param radio the radio to set
+     * Metodo que recibe como parametro el valor de la variable radio
+     * @param radio recibe el valor del radio
      */
     public void setRadio(float radio) {
         this.radio = radio;
