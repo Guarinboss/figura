@@ -30,7 +30,7 @@ public class Cuadrado extends Figura {
     @Override
     public void imprimirDatos() {
         System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
-                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
+                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro() + "\n");
     }
 
     /**

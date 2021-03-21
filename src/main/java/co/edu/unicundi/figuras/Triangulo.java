@@ -51,8 +51,8 @@ public class Triangulo extends Figura{
     
     @Override
     public void imprimirDatos() {
-        System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
-                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
+        System.out.println("El area del Triangulo es igual a: " + super.getArea() + "\n" + 
+                "y el perimetro del Triangulo es igual a: " + super.getPerimetro() + "\n");
     }
 
     /**

@@ -32,8 +32,8 @@ public class Rectangulo extends Figura {
     
     @Override
     public void imprimirDatos() {
-        System.out.println("El area del Cuadrado es igual a: " + super.getArea() + "\n" + 
-                "y el perimetro del Cuadrado es igual a: " + super.getPerimetro());
+        System.out.println("El area del Rectangulo es igual a: " + super.getArea() + "\n" + 
+                "y el perimetro del Rectangulo es igual a: " + super.getPerimetro() + "\n");
     }
 
     /**
