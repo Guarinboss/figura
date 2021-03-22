@@ -7,8 +7,9 @@ package co.edu.unicundi.figuras;
 
 /**
  * Clase hija de la clase Figura ecargada de recibir el lado de la figura 
- * Cuadrado para calcular el area y perimetro, y a su vez imprimir 
- * los calculo realizados. 
+ * Cuadrado para calcular el area y perímetro, y a su vez imprimir los 
+ * calculo realizados. 
+ * 
  * @author Alejandro Cuaran
  * @author David Parrado
  * @version 1.0.0
@@ -17,20 +18,23 @@ package co.edu.unicundi.figuras;
 public class Cuadrado extends Figura {
     
     /**
-     * Variable que indica el lado del Cuadrado
+     * Variable que indica el lado para el Cuadrado.
      */
     private float lado;
 
     /**
-     * Constructor sobrecargado de la clase Circulo
-     * @param lado recibe como parametro el valor del lado
+     * Constructor sobrecargado de la clase Circulo que recibe los datos
+     * ingresados en la clase Figura.
+     * 
+     * @param lado recibe como parametro el valor del lado para el
+     * Cuadrado.
      */
     public Cuadrado(float lado) {
         this.lado = lado;
     }
 
     /**
-     * Metodo que calcula el valor del area para un cuadrado
+     * Método abstracto que calcula el area para el Cuadrado.
      */
     @Override
     public void calcularArea() {
@@ -38,7 +42,7 @@ public class Cuadrado extends Figura {
     }
     
     /**
-     * Metodo que calcula el valor del perimetro para un circulo
+     * Método que calcula el perimetro para el Cuadrado.
      */
     @Override
     public void calcularPerimetro() {
@@ -46,7 +50,7 @@ public class Cuadrado extends Figura {
     }
     
     /**
-     * Metodo que imprime los datos del circulo
+     * Método abstracto que imprime el area y perímetro del Rectángulo.
      */
     @Override
     public void imprimirDatos() {
@@ -55,16 +59,18 @@ public class Cuadrado extends Figura {
     }
 
     /**
-     * Metodo que retorna el valor la variable lado
-     * @return retorna el valor del lado
+     * Método que retorna el valor del lado del Cuadrado.
+     * 
+     * @return retorna el valor del lado del Cuadrado.
      */
     public float getLado() {
         return lado;
     }
 
     /**
-     * Metodo que recibe como parametro el valor de la variable lado
-     * @param lado recibe el valor del lado
+     * Método que recibe el lado del Cuadrado ingresado en la clase Figura.
+     * 
+     * @param lado recibe como parámetro el lado del Cuadrado.
      */
     public void setLado(float lado) {
         this.lado = lado;

@@ -8,15 +8,33 @@ package co.edu.unicundi.figuras;
 import java.util.Scanner;
 
 /**
+ * Clase encargada de recibir los datos para las figuras Circulo, Cuadrado, 
+ * Triángulo y Rectángulo, almacenar los datos en un objeto que corresponda a
+ * la figura y guardarlas en un vector, con el objetivo de hacer llamado a 
+ * metodos abstractos que calculan e imprimen el area y perímetro de cada 
+ * una de estas.
  *
- * @author User
+ * @author Alejandro Cuaran
+ * @author David Parrado
+ * @version 1.0.0
+ * @since Netbeans IDE 12.2, JDK 1.8.0_281
  */
 public class Principal {
 
+    /**
+     * Constructor de la clase, el cual inicializa o hace llamado al metodo
+     * que realiza la funcion de la clase Figura.
+     */
     public Principal() {
         iniciar();
     }
     
+    /**
+     * Método que recibe los datos de cada figura, almacena cada dato en su
+     * correspondiente objeto y guardar dichos objetos en un vector, para luego
+     * hacer llamado de métodos abstractos que calculen e impriman el area y 
+     * perímetro de cada figura.
+     */
     public void iniciar() {
         Scanner valor = new Scanner(System.in);
         
@@ -66,9 +84,12 @@ public class Principal {
         }
     }
     
+    /**
+     * Metodo que ejecuta un objeto de la clase Principal
+     * @param args 
+     */
     public static void main(String[] args) {
         Principal principal = new Principal();
     }
-    
     
 }

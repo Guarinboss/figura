@@ -7,8 +7,9 @@ package co.edu.unicundi.figuras;
 
 /**
  * Clase hija de la clase Figura ecargada de recibir el radio de la figura 
- * Circulo para calcular el area y perimetro, y a su vez imprimir 
- * los calculo realizados. 
+ * Circulo para calcular el area y perímetro, y a su vez imprimir los 
+ * calculo realizados. 
+ * 
  * @author Alejandro Cuaran
  * @author David Parrado
  * @version 1.0.0
@@ -17,20 +18,23 @@ package co.edu.unicundi.figuras;
 public class Circulo extends Figura {
 
     /**
-     * Variable que indica el radio del circulo
+     * Variable que indica el radio para el Circulo.
      */
     private float radio;
 
-    
     /**
-     * Constructor sobrecargado de la clase Circulo
-     * @param radio recibe como parametro el valor del radio
+     * Constructor sobrecargado de la clase Circulo que recibe el radio
+     * ingresado en la clase Figura.
+     * 
+     * @param radio recibe como parametro el valor del radio para el
+     * Circulo.
      */
     public Circulo(float radio) {
         this.radio = radio;
     }
+    
     /**
-     * Metodo que calcula el valor del area para un circulo
+     * Método abstracto que calcula el area para el Circulo.
      */
     @Override
     public void calcularArea() {
@@ -38,7 +42,7 @@ public class Circulo extends Figura {
     }
     
     /**
-     * Metodo que calcula el valor del perimetro para un circulo
+     * Método abstracto que calcula el perimetro para el Círculo.
      */
     @Override
     public void calcularPerimetro() {
@@ -46,7 +50,7 @@ public class Circulo extends Figura {
     }
     
     /**
-     * Metodo que imprime los datos del circulo
+     * Método abstracto que imprime el area y perímetro del Círculo.
      */
     @Override
     public void imprimirDatos() {
@@ -55,16 +59,18 @@ public class Circulo extends Figura {
     }
 
     /**
-     * Metodo que retorna el valor la variable radio
-     * @return retorna el valor del radio
+     * Método que retorna el valor del radio del Círculo.
+     * 
+     * @return retorna el valor del radio del Círculo.
      */
     public float getRadio() {
         return radio;
     }
 
     /**
-     * Metodo que recibe como parametro el valor de la variable radio
-     * @param radio recibe el valor del radio
+     * Método que recibe el radio del Círculo ingresado en la clase Fígura.
+     * 
+     * @param radio recibe como parámetro el radio del Círculo.
      */
     public void setRadio(float radio) {
         this.radio = radio;

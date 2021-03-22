@@ -6,8 +6,9 @@
 package co.edu.unicundi.figuras;
 
 /**
- * Clase interface que se encarga de definir el metodo imprimirDatos para la
- * clase Figura
+ * Clase interface encargada de definir un método abstracto para la clase
+ * Figura que imprime el area y perímetro de cada figura.
+ * 
  * @author Alejandro Cuaran
  * @author David Parrado
  * @version 1.0.0
@@ -16,7 +17,7 @@ package co.edu.unicundi.figuras;
 public interface IFigura {
     
     /**
-     * Metodo abstracto que imprime los datos de las diferentes figuras
+     * Método abstracto que imprime los datos de las diferentes figuras.
      */
     public void imprimirDatos();
     

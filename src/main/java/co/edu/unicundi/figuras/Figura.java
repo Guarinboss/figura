@@ -6,61 +6,67 @@
 package co.edu.unicundi.figuras;
 
 /**
- * Clase padre encargada de definir metodos y variables comunes
+ * Clase padre encargada de definir metodos y variables comunes para sus clases
+ * hija.
+ * 
  * @author Alejandro Cuaran
  * @author David Parrado
  * @version 1.0.0
  * @since Netbeans IDE 12.2, JDK 1.8.0_281
  */
 public abstract class Figura implements IFigura {
+    
     /**
-     * Variable que indica el area de la figura
+     * Variable que indica el area de la figura.
      */
     private float area; 
     
     /**
-     * * Variable que indica el perimetro de la figura
+     * Variable que indica el perímetro de la figura.
      */
     private float perimetro;
     
     /**
-     * Metodo abstracto que calcula el area de una figura
+     * Método abstracto que calcula el area de una figura.
      */
     public abstract void calcularArea(); 
     
     /**
-     * Metodo abstracto que calcula el perimetro de una figura
+     * Método abstracto que calcula el perímetro de una figura.
      */
     public abstract void calcularPerimetro();
 
-    
     /**
-     * Metodo para obtener el valor de la variable area
-     * @return retorna el valor de area
+     * Método que retorna el valor del area de la figura.
+     * 
+     * @return retorna el valor de area de la figura.
      */
     public float getArea() {
         return area;
     }
 
     /**
-     * Metodo para establecer el valor de la variable area
-     * @param area recibe como parametro el valor de area
+     * Método que recibe el area de la figura.
+     * 
+     * @param area recibe como parámetro el area de la figura.
      */
     public void setArea(float area) {
         this.area = area;
     }
 
     /**
-     * Metodo para obtener el valor de la variable perimetro
-     * @return retorna el valor del perimetro
+     * Método que retorna el valor del perímetro de la figura.
+     * 
+     * @return retorna el valor del perimetro de la figura.
      */
     public float getPerimetro() {
         return perimetro;
     }
     
     /**
-     * Metodo para obtener el valor de la variable perimetro
-     * @param perimetro recibe como parametro el valor del perimetro
+     * Método que recibe el perímetro de la figura.
+     * 
+     * @param perimetro recibe como parametro el perímetro de la figura.
      */
     public void setPerimetro(float perimetro) {
         this.perimetro = perimetro;
